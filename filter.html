@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Music Revenue Data</title>
+    <title>Social Media Usage and Addiction Scores</title>
+
     <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="filter.js"></script>
@@ -11,22 +12,25 @@
 </head>
 <body>
 
-    <h1>Music Revenue Data</h1>
-    Filter on:<select id="typeFilter"></select>
+    <h1>Social Media Usage and Addiction Scores</h1>
+
+    Filter on: <select id="typeFilter"></select>
+
     <canvas id="revenueChart"></canvas>
+
     <table id="dataTable">
         <thead>
             <tr>
-                <th>Platform</th>
-                <th>Payout per Stream (USD)</th>
-                <th>Monthly Users (millions)</th>
-                <th>Type</th>
-                <th>Streams for US Monthly Minimum Wage</th>
+                <th>Average Daily Usage (Hours)</th>
+                <th>Addiction Score</th>
+                <th>Most Used Platform</th>
             </tr>
         </thead>
         <tbody>
         </tbody>
     </table>
-    <p>Data from <a href='https://artistpayout.com'>Artist Payout</a></p>
+
+    <p>Data source: Kaggle - Student Social Media Addiction Dataset</p>
+
 </body>
 </html>
