@@ -33,3 +33,15 @@ tr:nth-child(even) {
 tr:hover {
     background: #eef6ff;
 }
+
+.table-container {
+    max-height: 250px;
+    overflow-y: auto;
+    margin-top: 20px;
+}
+
+.table-container th {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
