@@ -67,6 +67,12 @@ function filterData() {
 // Update the table and scatter chart
 function drawPage(data) {
 
+    // Sort by daily usage hours (lowest first)
+    data.sort((a, b) =>
+    Number(a.Avg_Daily_Usage_Hours) -
+    Number(b.Avg_Daily_Usage_Hours)
+    );
+    
     const tbody =
         document.querySelector('#dataTable tbody');
 
