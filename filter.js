@@ -1,7 +1,7 @@
 let allData = [];
 let chart = null;
 
-Papa.parse('musicrevenue.csv', {
+Papa.parse('w4.csv', {
     download: true, 
     header: true,
     skipEmptyLines: true,
