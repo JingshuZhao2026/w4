@@ -35,7 +35,7 @@ tr:hover {
 }
 
 .table-container {
-    max-height: 250px;
+    max-height: 100px;
     overflow-y: auto;
     margin-top: 20px;
 }
